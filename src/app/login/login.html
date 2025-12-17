@@ -1,0 +1,52 @@
+
+<div class="d-flex justify-content-center align-items-center vh-100" 
+     style="background: url('/assets/Apple-iPhone-17-lineup-250909_big.jpg.large_2x.jpg') no-repeat center center; background-size: cover;">
+  
+  <div class="card shadow-lg p-4" 
+       style="width: 90%; max-width: 400px; border-radius: 15px; background-color: rgba(0,0,0,0.6); color: #fff;">
+       
+    <h2 class="card-title text-center mb-4">Login</h2>
+    
+    <form (ngSubmit)="onLogin()">
+     
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input 
+          type="text" 
+          id="email"
+          class="form-control bg-dark text-white border-0" 
+          placeholder="Enter email" 
+          [(ngModel)]="loginobj.Email" 
+          name="email"
+          required
+        >
+      </div>
+
+    
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input 
+          type="password" 
+          id="password"
+          class="form-control bg-dark text-white border-0" 
+          placeholder="Enter password" 
+          [(ngModel)]="loginobj.password" 
+          name="password"
+          required
+        >
+      </div>
+
+     
+  <button type="submit" 
+        class="btn w-100 mb-3" 
+        style="background-color: #4caf50; 
+               color: #fff; 
+               border: none; 
+               transition: none;">
+  Login
+</button>
+
+
+    
+      <div class="d-flex justify-content-between small flex-wrap">
+      

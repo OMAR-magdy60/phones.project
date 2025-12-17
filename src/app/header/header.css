@@ -1,0 +1,41 @@
+.navbar {
+  min-height: 70px;
+}
+
+.navbar .btn {
+  font-weight: 500;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.navbar .btn-success {
+  background-color:   #343a40;
+  border-color:  #343a40;
+}
+
+.navbar .btn-success:hover {
+  background-color: #16a34a;
+  transform: translateY(-2px);
+}
+
+.navbar .btn-outline-light {
+  border-width: 2px;
+}
+
+.navbar .btn-outline-light:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+/* موبايل */
+@media (max-width: 991px) {
+  .navbar .btn {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .navbar .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}

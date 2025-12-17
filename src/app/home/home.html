@@ -1,0 +1,29 @@
+<div class="container py-4">
+
+  <h1 class="title text-center mb-4"> Smartphones Catalog</h1>
+
+  <div class="d-flex justify-content-center mb-4">
+    <button class="refresh-btn btn btn-success" (click)="getSmartphones()"><img src="/assets/iPad Air – Apple (NO)_files/icon_app_applestore__chqzj9o87jxy_large.png" alt=""> Refresh List</button>
+  </div>
+
+  <div *ngIf="loading" class="status text-center">Loading...</div>
+  <div *ngIf="error" class="status error text-center">{{ error }}</div>
+
+  <div *ngIf="!loading && !error" class="cards-container row justify-content-center g-4">
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center" *ngFor="let item of smartphonelist">
+      <div class="card h-100 text-white shadow-sm card-hover">
+        <img [src]="item.thumbnail" alt="{{ item.title }}" class="card-img-top card-img">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ item.title }}</h5>
+          <p class="card-brand">{{ item.brand }}</p>
+          <p class="card-price">$ {{ item.price }}</p>
+          <p class="card-rating">⭐ {{ item.rating }}</p>
+          <button class="btn btn-outline-success mt-auto">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,18 @@
+body {
+  background: #f8f9fa;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.btn-primary {
+  background: #4a90e2;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #357ABD;
+}
+

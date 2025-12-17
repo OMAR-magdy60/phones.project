@@ -1,0 +1,82 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.hero {
+  background-color: #0d6efd;
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-footer .btn {
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.card-footer .btn:hover {
+  opacity: 0.9;
+}
+.product-card {
+  width: 250px;
+  cursor: pointer;
+}
+
+
+.card-sm {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
+
+
+.card-lg {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  width: 400px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  z-index: 10;
+}
+
+.product-card:hover .card-lg {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+.product-card:hover .card-sm {
+  transform: scale(1.05);
+}
