@@ -13,30 +13,22 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-  "outputPath": "docs",
-  "baseHref": "/phonesproject/",
-  "browser": "src/main.ts",
-  "polyfills": [
-    "zone.js"
-  ],
-  "tsConfig": "tsconfig.app.json",
-  
-  "assets": [
-    "src/favicon.ico",
-    "src/assets"
-  ],
-            "styles": [
-              "src/styles.css"
+            "outputPath": "docs",
+            "baseHref": "/phones.project/",
+            "browser": "src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
-  "node_modules/bootstrap/dist/css/bootstrap.min.css",
-  "src/styles.css"
-],
-"scripts": [
-  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-]
-
-
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
